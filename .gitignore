@@ -11,3 +11,13 @@ wheels/
 
 # TODO
 todo.md
+
+# Data 
+data/raw/
+data/processed/
+
+# Artifacts 
+artifacts/
+
+# env
+.env
