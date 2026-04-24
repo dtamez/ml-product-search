@@ -4,7 +4,7 @@ import pandas as pd
 
 from app.utils.text import build_searchable_text
 
-INPUT_PATH = "data/processed/products.csv"
+INPUT_PATH = "data/processed/retrieval_products.csv"
 OUTPUT_PATH = "data/processed/products_with_text.csv"
 
 

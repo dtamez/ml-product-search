@@ -21,7 +21,7 @@ class VectorIndex:
 
     @classmethod
     def load(cls, path: str):
-        index = faiss.read_inde(path)
+        index = faiss.read_index(path)
         obj = cls(index.d)
         obj.index = index
         return obj
