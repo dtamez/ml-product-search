@@ -15,6 +15,10 @@ def health():
 
 
 @app.get("/search")
-def search(q: str = Query(...), top_k: int = 10):
+def search(q: str = Query(...), top_k: int = 10, category: str | None = None):
     results = service.search(q, top_k)
+    if category:
+        results = [
+            r for r in results if category.lower() in r.get("category", "").lower()
+        ]
     return {"query": q, "top_k": top_k, "results": results}
