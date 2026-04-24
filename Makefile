@@ -29,7 +29,7 @@ index:
 	$(PYTHON) src/pipelines/build_index.py
 
 search:
-	$(PYTHON) src/pipelines/test_search.py
+	$(PYTHON) src/scripts/test_search.py
 
 pipeline: ingest corpus prepare embeddings index search
 
