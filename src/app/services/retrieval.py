@@ -2,6 +2,7 @@ import pandas as pd
 
 from app.services.embedder import Embedder
 from app.services.index import VectorIndex
+from app.utils.json import clean_for_json
 
 
 class RetrievalService:
@@ -25,6 +26,6 @@ class RetrievalService:
 
             row = self.products.iloc[idx].to_dict()
             row["score"] = float(score)
-            results.append(row)
+            results.append(clean_for_json(row))
 
         return results
