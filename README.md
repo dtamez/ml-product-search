@@ -199,6 +199,8 @@ Filtering improves:
 
 ---
 
-## 👤 Author
+## 💬 Discussion
 
-Built as a practical ML systems project focused on production-style search and retrieval.
+This project focuses on building a production-style ML retrieval system rather than model training. The emphasis is on data pipelines, indexing strategies, and serving ML systems reliably.
+
+Happy to discuss design decisions, tradeoffs, or extensions.
