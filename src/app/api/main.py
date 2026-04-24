@@ -22,3 +22,9 @@ def search(q: str = Query(...), top_k: int = 10, category: str | None = None):
             r for r in results if category.lower() in r.get("category", "").lower()
         ]
     return {"query": q, "top_k": top_k, "results": results}
+
+
+@app.post("/reindex")
+def reindex():
+    # placeholder for pipeline trigger
+    return {"status": "reindex triggered"}
