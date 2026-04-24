@@ -7,6 +7,10 @@ from app.utils.text import build_searchable_text
 INPUT_PATH = "data/processed/retrieval_products.csv"
 OUTPUT_PATH = "data/processed/products_with_text.csv"
 
+# All for sample data to be used if someone is running this without the full data set (e.g. from git)
+if not os.path.exists(INPUT_PATH):
+    INPUT_PATH = "data/sample/products_sample.csv"
+
 
 def main():
     df = pd.read_csv(INPUT_PATH)
