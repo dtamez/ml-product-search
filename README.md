@@ -6,7 +6,7 @@ This project demonstrates how to take raw product catalog data and turn it into 
 
 ---
 
-## 🚀 Features
+## Features
 
 * Semantic search using dense embeddings (Sentence Transformers)
 * Fast vector retrieval with FAISS
@@ -24,7 +24,7 @@ This project demonstrates how to take raw product catalog data and turn it into 
 
 ---
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
 ```
 Raw Data (Amazon Metadata)
@@ -44,7 +44,7 @@ FastAPI Service (/search)
 
 ---
 
-## ⚡ Quick Start (30 seconds)
+## Quick Start (30 seconds)
 
 Run the project using the included sample dataset:
 
@@ -76,7 +76,7 @@ curl "http://localhost:8000/search?q=wireless+earbuds"
 
 ---
 
-## 🧪 Example Queries
+## Example Queries
 
 * `wireless earbuds`
 * `gaming keyboard`
@@ -89,7 +89,7 @@ The system handles semantic matching and even minor typos.
 
 ---
 
-## 🏗️ Full Pipeline (Real Data)
+## Full Pipeline (Real Data)
 
 To run on full dataset:
 
@@ -110,7 +110,7 @@ make pipeline
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -130,7 +130,7 @@ artifacts/      # (ignored) embeddings + FAISS index
 
 ---
 
-## 🔍 Design Decisions
+## Design Decisions
 
 ### Why embeddings?
 
@@ -179,7 +179,7 @@ Filtering improves:
 
 ---
 
-## 📊 What This Demonstrates
+## What This Demonstrates
 
 * Building ML systems beyond notebooks
 * Handling messy real-world data
@@ -189,7 +189,7 @@ Filtering improves:
 
 ---
 
-## 🛠️ Future Improvements
+## Future Improvements
 
 * Hybrid search (keyword + vector)
 * Result re-ranking
@@ -199,7 +199,7 @@ Filtering improves:
 
 ---
 
-## 💬 Discussion
+## Discussion
 
 This project focuses on building a production-style ML retrieval system rather than model training. The emphasis is on data pipelines, indexing strategies, and serving ML systems reliably.
 
